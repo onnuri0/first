@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    initialize: false
+    platform: postgresql
+    url: jdbc:postgresql://ec2-23-23-142-5.compute-1.amazonaws.com:5432/d9527fpbj60l91?sslmode=require
+    driver-class-name: org.postgresql.Driver
+    username: rmviwwdmtbjlgg
+    password: c5bb17d5f5fc012ed192fc458374b444911dd7ef9121efc9b8a8220ea42df675
+    sql-script-encoding: UTF-8
+    validation-query: 'select now()'
+    test-on-borrow: true
+    test-on-return: false
+    test-while-idle: true
+    time-between-eviction-runs-millis: 3600000
+    validation-interval: 30000
+      
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
