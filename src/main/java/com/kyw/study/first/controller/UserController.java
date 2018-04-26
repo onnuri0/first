@@ -83,7 +83,7 @@ public class UserController {
 	@ApiOperation(value="사용자를 삭제 합니다.")
 	@RequestMapping(value="/{id}",method = RequestMethod.DELETE)
     public ResponseEntity<User> basicDUser(@PathVariable("id") String id ) {
-	     
+	      
 		User vo = repo_user.findOne(id);
 		
         if (vo == null) {
