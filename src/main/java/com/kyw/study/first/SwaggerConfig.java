@@ -28,9 +28,9 @@ public class SwaggerConfig {
 	    private ApiInfo apiInfo() {
 	        return new ApiInfoBuilder()
 	                .title("Spring REST API with Swagger")
-	                .description("SJH API with Swagger")
+	                .description("KYW API with Swagger")
 	               // .termsOfServiceUrl("http://www-03.ibm.com/software/sla/sladb.nsf/sla/bm?Open")
-	                .contact("Seo Jeong Hwan")
+	                .contact("Kim Young Woo")
 	                .license("MIT")
 	               // .licenseUrl("https://github.com/IBM-Bluemix/news-aggregator/blob/master/LICENSE")
 	                .version("1.0")
