@@ -1,4 +1,4 @@
-package com.sjh.study.first;
+package com.kyw.study.first;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

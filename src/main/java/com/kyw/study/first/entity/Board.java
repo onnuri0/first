@@ -1,4 +1,4 @@
-package com.sjh.study.first.entity;
+package com.kyw.study.first.entity;
 
 import java.util.Date;
 
@@ -24,7 +24,7 @@ import lombok.Data;
 public class Board {
 
 	@Id
-	@GenericGenerator(name="id_generator", strategy="com.sjh.study.first.generator.RnfTbIdGenerator")
+	@GenericGenerator(name="id_generator", strategy="com.kyw.study.first.generator.RnfTbIdGenerator")
 	@GeneratedValue(generator="id_generator")
 	@Column(name="bd_id", unique=true, nullable=false, length=50)  // unique=true 
 	private String bdId;

@@ -1,8 +1,8 @@
-package com.sjh.study.first.repository;
+package com.kyw.study.first.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.sjh.study.first.entity.User;
+import com.kyw.study.first.entity.User;
 
 public interface UserRepository extends JpaRepository<User, String>{
 

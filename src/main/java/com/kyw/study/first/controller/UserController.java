@@ -1,4 +1,4 @@
-package com.sjh.study.first.controller;
+package com.kyw.study.first.controller;
 
 import java.util.List;
 
@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.sjh.study.first.entity.User;
-import com.sjh.study.first.repository.UserRepository;
-import com.sjh.study.first.util.ReflectPojoSetUtil;
+import com.kyw.study.first.entity.User;
+import com.kyw.study.first.repository.UserRepository;
+import com.kyw.study.first.util.ReflectPojoSetUtil;
 
 import io.swagger.annotations.ApiOperation;
 
@@ -83,7 +83,7 @@ public class UserController {
 	@ApiOperation(value="사용자를 삭제 합니다.")
 	@RequestMapping(value="/{id}",method = RequestMethod.DELETE)
     public ResponseEntity<User> basicDUser(@PathVariable("id") String id ) {
-	    
+	     
 		User vo = repo_user.findOne(id);
 		
         if (vo == null) {

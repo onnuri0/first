@@ -1,4 +1,4 @@
-package com.sjh.study.first.entity;
+package com.kyw.study.first.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,7 +17,7 @@ import lombok.Data;
 public class User {
 
 	@Id
-	@GenericGenerator(name="id_generator", strategy="com.sjh.study.first.generator.RnfTbIdGenerator")
+	@GenericGenerator(name="id_generator", strategy="com.kyw.study.first.generator.RnfTbIdGenerator")
 	@GeneratedValue(generator="id_generator")
 	@Column(name="bu_id", unique=true, nullable=false)  // unique=true 
 	private String buId;

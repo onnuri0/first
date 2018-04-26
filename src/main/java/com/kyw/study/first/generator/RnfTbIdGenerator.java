@@ -1,4 +1,4 @@
-package com.sjh.study.first.generator;
+package com.kyw.study.first.generator;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
